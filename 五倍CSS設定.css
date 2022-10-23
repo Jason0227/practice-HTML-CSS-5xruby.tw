@@ -1,0 +1,46 @@
+body{
+    flex-wrap: wrap;
+    width: 1440px;
+    margin: auto;
+}
+header{
+    display: flex;
+    width: 1440px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 48px;
+    height: 48px;
+}
+.logo span{
+    margin: 10px;
+}
+.logo span a{  
+    font-size: 28px;
+    text-decoration: none ;
+}
+.class-other-web{
+    display: flex;
+    width: 720px;
+    align-items: center;
+}
+.class-other-web ul{
+    display: flex;
+    justify-content: end;
+}
+.class-other-web li{
+    list-style-type: none; 
+}
+.class-other-web a{
+    font-size: 28px;
+    margin: 10px;
+    text-decoration: none
+}
