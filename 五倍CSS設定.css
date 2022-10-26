@@ -65,13 +65,15 @@ header{
 }
 
 /* ==================主要區(main)===================== */
-
+main{
+    width: 100%;
+}
 /* ==================廣告區(advertise)===================== */
 
 .advertise{
     width: 100%;
     background-color: rgb(255,255,255);
-
+    padding-bottom: 240px;
 }
 .advertise-picture{
     width: 1260px;
@@ -139,3 +141,133 @@ header{
 }
 
 /* ==================講師們(teachers)===================== */
+.teachers{
+    width: 100%;
+}
+.teachers-title{
+    width: 840px;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px ;
+}
+.teachers-title h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.teachers-title h1::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 69px;
+    background-color: red;
+    margin-top: 10px;
+}
+.teachers-title p{
+    font-size: 25px;
+    padding-top: 50px;
+}
+.teachers-team{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.teachers-team-place{
+    width: 624px;
+    padding: 24px;
+    box-shadow: 2px 2px 5px 5px rgb(229, 231, 235);
+    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.teacher-person-title{
+    display: flex;
+    margin: auto;
+    padding-bottom: 60px;
+    border-bottom: 2px solid rgb(229, 231, 235) ;
+}
+.teacher-person-title img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.teacher-identity{
+    margin-left: 24px;
+    padding-top: 40px;
+}
+.teacher-identity p{
+    font-size: 20px;
+}
+.teacher-identity p::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 60px;
+    background-color: red;
+    margin-top: 8px;
+}
+.teacher-identity h2{
+    font-size: 23px;
+    font-weight: 900;
+    padding-top: 20px;
+}
+.teacher-identity ul{
+    display: flex;
+}
+.teacher-weblink li{
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.teacher-weblink img{
+    width: 24px;
+    height: 24px;
+}
+.teachers-introduce{
+    margin: auto;
+    padding-top: 40px;
+    line-height: 1.5;
+}
+.teachers-introduce p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.teachers-introduce span{
+    font-weight: 300;
+}
+.teachers-introduce a{
+    color: red;
+    text-decoration: none ;
+}
+.teacher-other-class{
+    padding-top: 20px;
+    margin: auto;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+.teacher-other-class h2{
+    font-size: 20px;
+    position: relative;
+}
+.teacher-other-class h2::after{
+    content: "";
+    height: 0px;
+    border-bottom: 1px solid rgb(229, 231, 235);
+    top: 50%;
+    right: 0;
+    position: absolute;
+    width: 500px;
+}
+.teacher-other-class ul{
+    display: flex;
+    padding-top: 30px;
+}
+.teacher-other-class li{
+    margin-right: 10px;
+}
+.teacher-other-class a{
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 12px;
+    text-decoration: none ;
+}
