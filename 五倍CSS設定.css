@@ -94,7 +94,7 @@ header{
 .advertise-title h1::after{
     content: '';
     display: block;
-    justify-items: center;
+    margin: auto;
     height: 2px;
     width: 60px;
     background-color: red;
@@ -102,6 +102,8 @@ header{
 }
 .advertise-title p{
     text-align: center;
+    font-size: 28px;
+    padding-top: 60px;
 }
 .advertise-point{
     width: 1260px;
@@ -109,16 +111,29 @@ header{
 }
 .advertise-title div{
     width: 420px;
-    padding: 36px;
+    /* padding: 36px; */
 }
-.advertise-title img{
-    width: 100%;
+.advertise-point{
+    margin: auto;
 }
-.advertise-title h2{
-    width: 100%;
+.advertise-point div{
+    padding: 40px;
 }
-.advertise-title p{
+.advertise-point img{
     width: 100%;
+    vertical-align: top;
+}
+.advertise-point h2{
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.advertise-point p{
+    width: 100%;
+    font-size: 21px;
+    padding-top: 10px ;
+    text-align: center;
 }
 
 /* ==================廣告區(advertise)===================== */
