@@ -4,6 +4,9 @@ body{
     margin: auto;
     position: relative;
 }
+
+/* ==================導覽列(header)===================== */
+
 header{
     display: flex;
     width: 100%;
@@ -60,3 +63,62 @@ header{
 .class-other-web a:hover::after{
     transform: scaleX(1);
 }
+
+/* ==================廣告區(advertise)===================== */
+
+.advertise{
+    width: 100%;
+    background-color: rgb(255,255,255);
+
+}
+.advertise-picture{
+    width: 1260px;
+    margin: auto;
+    padding-top: 36px;
+}
+.advertise-picture img{
+    width: 100%;
+    vertical-align: top;
+}
+.advertise-title{
+    margin: auto;
+    width: 1260px;
+    padding-top: 60px;
+}
+.advertise-title h1{
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+}
+.advertise-title h1::after{
+    content: '';
+    display: block;
+    justify-items: center;
+    height: 2px;
+    width: 60px;
+    background-color: red;
+    margin-top: 10px;
+}
+.advertise-title p{
+    text-align: center;
+}
+.advertise-point{
+    width: 1260px;
+    display: flex;
+}
+.advertise-title div{
+    width: 420px;
+    padding: 36px;
+}
+.advertise-title img{
+    width: 100%;
+}
+.advertise-title h2{
+    width: 100%;
+}
+.advertise-title p{
+    width: 100%;
+}
+
+/* ==================廣告區(advertise)===================== */
