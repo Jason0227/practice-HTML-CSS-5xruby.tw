@@ -14,6 +14,7 @@ header{
     justify-content: space-between;
     position: sticky;
     top: 0px;
+    z-index: 10;
 }
 .logo{
     display: flex;
@@ -143,6 +144,12 @@ main{
 /* ==================講師們(teachers)===================== */
 .teachers{
     width: 100%;
+    background-color: rgb(249, 250, 251);
+}
+.before{
+    height: 180px;
+    background-color: rgb(249, 250, 251);
+    clip-path: polygon(0% 100%, 35% 0%, 100% 100%);
 }
 .teachers-title{
     width: 840px;
