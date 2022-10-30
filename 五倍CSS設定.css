@@ -146,7 +146,7 @@ main{
     width: 100%;
     background-color: rgb(249, 250, 251);
 }
-.before{
+.teachers-before{
     height: 180px;
     background-color: rgb(249, 250, 251);
     clip-path: polygon(0% 100%, 35% 0%, 100% 100%);
@@ -342,4 +342,21 @@ main{
     padding: 20px;
     text-decoration: none ;
     border-radius: 5px;
+}
+
+/* ==============短期課程(short-course)================= */
+
+.short-course-before{
+    height: 180px;
+    background-color: rgb(13, 121, 228);
+    clip-path: polygon(0% 100%, 35% 0%, 100% 100%);
+}
+
+
+
+
+.short-course-after{
+    height: 180px;
+    background-color: rgb(13, 121, 228);
+    clip-path: polygon(0% 0%, 65% 100%, 100% 0% );
 }
