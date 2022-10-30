@@ -144,11 +144,13 @@ main{
 
 .teachers{
     width: 100%;
-    background-color: rgb(249, 250, 251);
+    /* background-color: rgb(249, 250, 251); */
+    background-color: red;
 }
 .before{
     height: 180px;
-    background-color: rgb(249, 250, 251);
+    /* background-color: rgb(249, 250, 251); */
+    background-color: aqua;
     clip-path: polygon(0% 100%, 35% 0%, 100% 100%);
 }
 .teachers-title{
@@ -283,8 +285,15 @@ main{
 
 .media-reports{
     width: 100%;
-    background-color: rgb(249, 250, 251);
-    padding-top: 80px;
+    /* background-color: rgb(249, 250, 251); */
+    background-color: aquamarine;
+    /* padding-top: 50px; */
+}
+.media-reports{
+    width: 100%;
+    /* background-color: rgb(249, 250, 251); */
+    background-color: aquamarine;
+    /* padding-top: 50px; */
 }
 .media-reports h1{
     margin: auto;
@@ -305,41 +314,29 @@ main{
 .media-report-article{
     display: flex;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     /* background-color: rgb(249, 250, 251); */
     padding-top: 50px;
-    padding-bottom: 40px;
 }
 .media-report-article div h2 {
-    padding-bottom: 24px;
-}
-.media-report-article div p {
-    justify-content: start; 
-    font-size: 20px;
+    padding-bottom: 20px;
 }
 .media-report-article div{
     width: 580px;
     margin-bottom: 24px;
 }
-.media-report-article a{
+.media-report-article :nth-child(even){
+    margin-left: 24px;
+}
+.media-reports a{
     font-size: 30px;
     font-weight: 800;
-    /* text-align: start; */
+    text-align: start;
     text-decoration: none ;
 }
-.media-more-reports {
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    padding-top: 60px;
-    padding-bottom: 60px ;
-    
-}
-.media-more-reports a{
-    background-color: red;
-    font-size: 30px;
-    padding: 20px;
-    text-decoration: none ;
-    border-radius: 5px;
+/* 以下這行有問題 */
+
+.media-report-article div :nth-child(1),:nth-child(2),:nth-child(3),:nth-child(4){
+    margin-bottom: 24px;
 }
