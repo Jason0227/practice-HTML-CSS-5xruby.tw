@@ -285,7 +285,7 @@ main{
     width: 100%;
     background-color: rgb(249, 250, 251);
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 200px;
 }
 .media-reports h1{
     margin: auto;
@@ -347,26 +347,36 @@ main{
 
 /* ==============短期課程(short-course)================= */
 
-.short-course-before{
-    height: 180px;
-    background-color: rgb(13, 121, 228);
-    clip-path: polygon(0% 100%, 35% 0%, 100% 100%);
-}
-
 .short-course{
     width: 100%;
     background-color: rgb(41, 48, 62);
-    padding-top: 80px;
-    padding: 40px;
+    padding-top: 100px;
+    position: relative;
 }
-.short-course h1{
-    font-size: 40px;
-    padding: 10px;
+.short-course::before{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 0;    
+    width: 100%;
+    height: 120px;
+    background-color: rgb(41, 48, 62);
+    clip-path: polygon( 35% 0%, 100% 100%, 0% 100% );
+}
+.short-course-content{
+    width: 1080px;
+    height: 260px;
+    margin: auto;
+}
+.short-course-content h1{
+    width: 100%;
+    font-size: 40px;    
     text-align: start;
     font-weight: 900;
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
-.short-course h1::after{
+.short-course-content h1::after{
     content: '';
     display: block;
     height: 2px;
@@ -374,32 +384,76 @@ main{
     background-color: red;
     margin-top: 10px;
 }
-.short-course-content{
-    width: 100%;
+.course-introduce{
     display: flex;
-    padding-top: 20px;
 }
-.short-course-content p{
-    font-size: 30px;
+.course-introduce p{
+    width: 540px;
+    font-size: 25px;
     color: rgb(160, 166, 177);
 }
 .backed-course-diamond{
-    display: inline-block;
-    outline: 1px solid red;
     padding: 5px;
+    height: 200px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     
 }
 .backed-course-diamond div{
-    
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
+    margin: 5px;
     transform: rotate(45deg);
-    /* background-color: rgb(108, 114, 127); */
+    background-color: rgb(108, 114, 127);
+}
+.backed-course-diamond div:nth-child(2){
     background-color: red;
 }
-
-
-
+.backed-course-content{
+    padding-top: 40px;
+    background-color: red;
+    padding-left: 20px;
+    color: rgb(160, 166, 177);
+    position: relative;
+    
+}
+.backed-course-content::before{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 0;    
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    clip-path: polygon( 65% 0%, 100% 100%, 0% 100% );
+}
+.backed-course-content::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;    
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    clip-path: polygon(0% 0%, 100% 0%, 35% 100% );
+}
+.backed-course-content h2{
+    color: #FFFFFF;
+    font-size: 25px; 
+    padding-bottom: 20px;
+}
+.backed-course-content p{
+    color: #FFFFFF;
+    font-size: 15px; 
+    padding-bottom: 25px;
+}
+.backed-course-content a{
+    color: #FFFFFF;
+    font-size: 15px; 
+    padding-bottom: 25px;
+}
 
 .short-course-after{
     height: 180px;
